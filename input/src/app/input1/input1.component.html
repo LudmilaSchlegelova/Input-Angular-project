@@ -1,0 +1,8 @@
+<p><strong>Type away! Press [enter] or click elsewhere when done.</strong></p>
+<input
+  type="text"
+  #text
+  (keyup.enter)="onEnter(text.value)"
+  (clickElsewhere)="onEnter(text.value)"
+/>
+<p>{{ text.value }}</p>

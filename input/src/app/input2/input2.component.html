@@ -1,0 +1,7 @@
+<p><strong>Little Tour of Heroes</strong></p>
+<p class="italic">Add a new hero</p>
+<input type="text" #newName />
+<button (click)="onNewName(newName.value)">Add</button>
+<ul>
+  <li *ngFor="let hero of heroes">{{ hero }}</li>
+</ul>
